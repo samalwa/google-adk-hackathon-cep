@@ -3,6 +3,7 @@
 ## Overview
 
 This project demonstrates a multi-agent AI system designed to empower Marketing and Analytics teams with proactive, policy-compliant, and hyper-personalized customer engagement. It integrates several specialized agents to handle different aspects of the data, segmentation, from data retrieval to advanced analytics and personalized email content. The system is built to interact with BigQuery, perform complex data manipulations, generate html emails and execute machine learning tasks using BigQuery ML (BQML). The agent can generate text response as well as sentiments for data analysis and activations.
+The project shows an glimpse of the posibilities and can be customized as per need. 
 
 ## Youtube Demo Use Case
     1. Demo1 - sending personalized email- [https://youtu.be/zUPtrTP5Ils]

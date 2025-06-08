@@ -1,4 +1,4 @@
-# Data Science with Multiple Agents
+# Marketing and Analytics with Multiple Agents
 
 ## Overview
 

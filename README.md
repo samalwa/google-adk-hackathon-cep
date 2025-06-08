@@ -4,6 +4,9 @@
 
 This project demonstrates a multi-agent system designed for sophisticated data analysis. It integrates several specialized agents to handle different aspects of the data pipeline, from data retrieval to advanced analytics and machine learning. The system is built to interact with BigQuery, perform complex data manipulations, generate data visualizations and execute machine learning tasks using BigQuery ML (BQML). The agent can generate text response as well as visuals, including plots and graphs for data analysis and exploration.
 
+## Youtube Demo Use Case
+    1. Demo1 - sending personalized email- [https://youtu.be/zUPtrTP5Ils]
+    2. Demo2 - Understanding customer conversation, finding his best interests, getting other details, understaanding transaction behavior and activation - [https://www.youtube.com/watch?v=emkl4oPGSxg]
 
 
 ## Agent Details

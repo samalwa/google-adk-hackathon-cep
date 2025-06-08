@@ -1,0 +1,154 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.1.4">
+  <diagram name="Page-1" id="D_7MExPlTlx4XFlw4Dkm">
+    <mxGraphModel dx="2587" dy="937" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LvZWQXApFUnK-Pe8EVZy-14" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="user_input" target="LvZWQXApFUnK-Pe8EVZy-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="user_input" value="User Input" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-410" y="70" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="intent_understanding" value="Intent Understanding" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="380" y="60" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="db_agent" value="DB Agent" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;strokeColor=#005792;fillColor=#008cff;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="100" y="270" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sg_agent" value="SG Agent" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;strokeColor=#005792;fillColor=#008cff;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="250" y="270" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="bqml_agent_main" value="BQML Agent" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;strokeColor=#005792;fillColor=#008cff;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="370" y="270" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="st_agent" value="Sentiment Data Tool (ST Agent)" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;strokeColor=#005792;fillColor=#008cff;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="550" y="270" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ct_agent" value="Content/Email Creation Tool (CT Agent)" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;strokeColor=#005792;fillColor=#008cff;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="700" y="270" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_intent_to_db" value="Database Query" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="intent_understanding" target="db_agent">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="210" as="sourcePoint" />
+            <mxPoint x="150" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_intent_to_sg" value="Segmentation/Activation" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="intent_understanding" target="sg_agent">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="210" as="sourcePoint" />
+            <mxPoint x="300" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_intent_to_bqml" value="BQML Tasks" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="intent_understanding" target="bqml_agent_main">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="210" as="sourcePoint" />
+            <mxPoint x="450" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_intent_to_st" value="Sentiment Check" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="intent_understanding" target="st_agent">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="210" as="sourcePoint" />
+            <mxPoint x="600" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_intent_to_ct" value="Content Creation" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="intent_understanding" target="ct_agent">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="210" as="sourcePoint" />
+            <mxPoint x="750" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_db_agent_to_db" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="db_agent" target="LvZWQXApFUnK-Pe8EVZy-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="350" as="sourcePoint" />
+            <mxPoint x="141.57894736842104" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_sg_agent_to_db" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="sg_agent" target="LvZWQXApFUnK-Pe8EVZy-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="350" as="sourcePoint" />
+            <mxPoint x="165.26315789473665" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bqml" value="" style="html=1;whiteSpace=wrap;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image;imageBackground=none;image=https://miro.medium.com/v2/resize:fit:432/1*pvVDNpYIofx0P1TS-0SMRQ.png;" vertex="1" parent="1">
+          <mxGeometry x="330" y="420" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_bqml_agent_to_bqml" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="bqml_agent_main" target="bqml">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="350" as="sourcePoint" />
+            <mxPoint x="450" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LvZWQXApFUnK-Pe8EVZy-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gcs">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gcs" value="" style="html=1;whiteSpace=wrap;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image;imageBackground=none;image=https://media.fab.com/image_previews/gallery_images/33e33049-54f7-4970-8675-44a5aaf0c563/19a17877-b072-4669-80fd-658e69d283ae.png;" vertex="1" parent="1">
+          <mxGeometry x="500" y="480" width="144" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="upload_file_gcs_tool" value="Upload File GCS Tool" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;strokeColor=#005792;fillColor=#008cff;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="470" y="360" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_gcs_tool_to_gcs" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="upload_file_gcs_tool" target="gcs">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="450" as="sourcePoint" />
+            <mxPoint x="610" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="send_email_tool" value="Send Email Tool" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;strokeColor=#005792;fillColor=#008cff;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="700" y="370" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_ct_agent_to_send_email" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="ct_agent" target="send_email_tool">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="760" y="350" as="sourcePoint" />
+            <mxPoint x="760" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="email_service" value="Email Service" style="shape=cloud;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="700" y="470" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_send_email_to_email_service" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="send_email_tool" target="email_service">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="760" y="450" as="sourcePoint" />
+            <mxPoint x="760" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="user_confirmation" value="User Confirmation" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="735" y="580" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_email_service_to_user_confirmation" value="Email Confirmation" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="send_email_tool" target="user_confirmation">
+          <mxGeometry x="0.3803" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="760" y="450" as="sourcePoint" />
+            <mxPoint x="760" y="580" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="760" y="540" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LvZWQXApFUnK-Pe8EVZy-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="user_confirmation" target="user_confirmation">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LvZWQXApFUnK-Pe8EVZy-6" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://cxl.com/wp-content/uploads/2019/10/google-bigquery-logo-1.png;" vertex="1" parent="1">
+          <mxGeometry x="76.09000000000003" y="480" width="147.82" height="83.27" as="geometry" />
+        </mxCell>
+        <mxCell id="LvZWQXApFUnK-Pe8EVZy-8" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.417;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="intent_understanding" target="upload_file_gcs_tool">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LvZWQXApFUnK-Pe8EVZy-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LvZWQXApFUnK-Pe8EVZy-13" target="LvZWQXApFUnK-Pe8EVZy-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LvZWQXApFUnK-Pe8EVZy-13" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://miro.medium.com/v2/resize:fit:1200/1*-EyccfIyyvstrjlh3qSjuw.png;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="40.239999999999995" width="189.52" height="99.5" as="geometry" />
+        </mxCell>
+        <mxCell id="LvZWQXApFUnK-Pe8EVZy-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LvZWQXApFUnK-Pe8EVZy-15" target="intent_understanding">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LvZWQXApFUnK-Pe8EVZy-15" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.gstatic.com/lamda/images/gemini_thumbnail_v2_55a4e3be7b83404a620e5.jpg;" vertex="1" parent="1">
+          <mxGeometry x="120" y="55.87" width="130" height="68.25" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

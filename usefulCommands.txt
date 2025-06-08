@@ -1,0 +1,2 @@
+py -m venv .venv
+$env:GOOGLE_APPLICATION_CREDENTIALS="C:\Users\samal\OneDrive\Documents\Learning\AI\google adk hackathon\data-science\data_science\sub_agents\bigquery\gen-lang-client-0490809986-05e0025fb41e.json"

@@ -19,7 +19,7 @@ The key features of the Data Science Multi-Agent include:
 
 
 ### Architecture
-![Multi Agent Architecture](Google-ADK-Hackathon.drawio)
+Refer draw.io file for Architecture - Google-ADK-Hackathon.drawio
 !Flow Chart link https://app.eraser.io/workspace/lsnCZzokyxbNL47Z3GrT
 
 ### Key Features
